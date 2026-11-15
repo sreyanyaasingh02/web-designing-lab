@@ -1,0 +1,140 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7f0;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* Header with background image */
+header {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ), url("https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1600");
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+header h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 17px;
+}
+
+/* Navigation */
+nav {
+    margin-top: 25px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 22px;
+    border-radius: 8px;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #386641;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #588157;
+    margin-bottom: 8px;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+section ul {
+    padding-left: 25px;
+}
+
+/* Skip link for keyboard users */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 10px;
+    background: white;
+    color: #222;
+    padding: 10px;
+}
+
+.skip-link:focus {
+    left: 10px;
+    z-index: 10;
+}
+
+/* Keyboard focus */
+a:focus-visible {
+    outline: 3px solid #f4a261;
+    outline-offset: 4px;
+}
+
+/* Footer */
+footer {
+    background-color: #386641;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    section {
+        padding: 18px;
+    }
+}
