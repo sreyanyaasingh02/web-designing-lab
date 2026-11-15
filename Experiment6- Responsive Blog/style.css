@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f3ef;
+    color: #333;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #252525;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Header with background image */
+.hero {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0.55)
+    ),
+    url("https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=1600");
+
+    background-size: cover;
+    background-position: center;
+    min-height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 60px 15px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+/* Owner name */
+.owner {
+    font-size: 16px !important;
+    font-weight: bold;
+    margin-bottom: 12px !important;
+    color: white;
+}
+
+/* Introduction */
+.intro {
+    padding-top: 55px;
+    padding-bottom: 35px;
+    max-width: 850px;
+}
+
+.intro h2,
+.shoe-section h2,
+.about-section h2 {
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+/* Shoe cards */
+.shoe-section {
+    padding-top: 25px;
+    padding-bottom: 65px;
+}
+
+.shoe-card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+    transition: transform 0.3s;
+}
+
+.shoe-card:hover {
+    transform: translateY(-5px);
+}
+
+.shoe-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.shoe-card .card-title {
+    font-weight: bold;
+    color: #252525;
+}
+
+.shoe-card .card-text {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Price range */
+.price {
+    color: #795548;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+/* About section */
+.about-section {
+    background-color: #e5ded4;
+    padding: 50px 15px;
+}
+
+.about-section p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+/* Footer */
+footer {
+    background-color: #252525;
+    color: white;
+    padding: 18px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive design for tablets */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 300px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .shoe-card img {
+        height: 200px;
+    }
+}
+
+/* Responsive design for mobile phones */
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .intro {
+        padding: 35px 20px;
+    }
+
+    .shoe-section {
+        padding: 20px 20px 45px;
+    }
+}
